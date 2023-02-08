@@ -55,13 +55,13 @@ function genObjectWitchPathNotInTree(object: Record<string, any>, path: string[]
   return JSON.parse(JSON.stringify(object))
 }
 
-export function envVirtualModule(options: EnvVirtualModulePluginOptions): Plugin {
+export function transformVirtualModule(options: EnvVirtualModulePluginOptions): Plugin {
   const { resolveId, mode, combineData, envConstantPrefix } = options
 
   const envData = loadTargetEnvFile(mode, envConstantPrefix)
 
   return {
-    name: 'vite-plugin-env-virtual-module',
+    name: 'vite-plugin-env-transform-virtual-module',
     resolveId(id) {
       if (id === resolveId)
         return `\0${resolveId}`

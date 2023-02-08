@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-env-virtual-module",
+  "name": "vite-plugin-env-transform-virtual-module",
   "version": "0.0.1",
   "description": "",
   "type": "module",
