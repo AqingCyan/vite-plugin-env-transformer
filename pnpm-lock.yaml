@@ -5,8 +5,9 @@ specifiers:
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-conventional': ^17.4.2
   '@types/node': ^18.13.0
+  commitlint: ^17.4.2
   eslint: ^8.33.0
-  husky: ^7.0.0
+  husky: ^8.0.3
   lint-staged: ^13.1.1
   tsup: ^6.6.0
   typescript: ^4.9.5
@@ -21,8 +22,9 @@ devDependencies:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@types/node': 18.13.0
+  commitlint: 17.4.2
   eslint: 8.33.0
-  husky: 7.0.4
+  husky: 8.0.3
   lint-staged: 13.1.1
   tsup: 6.6.0_typescript@4.9.5
   typescript: 4.9.5
@@ -1442,6 +1444,18 @@ packages:
     engines: {node: ^12.20.0 || >=14}
     dev: true
 
+  /commitlint/17.4.2:
+    resolution: {integrity: sha512-1UQecX+vSJHQXTKFMRZmf8EG3BYYjkT26JLe6FTQhu7N67FiWdWbqXMpcQSpqx/kWNz9a+DX2au2e61IH89PDA==}
+    engines: {node: '>=v14'}
+    hasBin: true
+    dependencies:
+      '@commitlint/cli': 17.4.2
+      '@commitlint/types': 17.4.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+    dev: true
+
   /compare-func/2.0.0:
     resolution: {integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==}
     dependencies:
@@ -2768,9 +2782,9 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
