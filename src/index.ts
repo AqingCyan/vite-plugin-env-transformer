@@ -55,7 +55,7 @@ function genObjectWitchPathNotInTree(object: Record<string, any>, path: string[]
   return JSON.parse(JSON.stringify(object))
 }
 
-export function envReader(options: EnvVirtualModulePluginOptions): Plugin {
+export function envVirtualModule(options: EnvVirtualModulePluginOptions): Plugin {
   const { resolveId, mode, combineData, envConstantPrefix } = options
 
   const envData = loadTargetEnvFile(mode, envConstantPrefix)
