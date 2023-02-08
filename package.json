@@ -1,0 +1,28 @@
+{
+  "name": "vite-plugin-env-virtual-module",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "tsup src/index.ts --dts --format cjs,esm --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
+    "@types/node": "^18.13.0",
+    "eslint": "^8.33.0",
+    "tsup": "^6.6.0",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4"
+  }
+}
