@@ -1,11 +1,12 @@
 {
-  "name": "vite-plugin-env-transform-virtual-module",
+  "name": "vite-plugin-env-transform-module",
   "version": "0.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "homepage": "",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
