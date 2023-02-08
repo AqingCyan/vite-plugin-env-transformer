@@ -26,13 +26,6 @@ export default defineConfig({
 });
 ```
 
-```bash
-> env
-...
-HOME=/Users/kejun
-...
-```
-
 see [example](./examples/)
 
 ## Options
