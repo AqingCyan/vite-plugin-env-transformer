@@ -2,7 +2,7 @@
 
 # vite-plugin-env-transform-module
 
-This is a vite plugin. It parses the configuration from your.env file into an object and allows you to import it as an ES module in your code.
+This is a vite plugin. It parses the configuration from your `.env` file into an object and allows you to import it as an ES module in your code.
 
 English | [简体中文](./README.zh-CN.md)
 
