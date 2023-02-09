@@ -1,6 +1,6 @@
 import * as path from 'path'
 import { loadEnv } from 'vite'
-import type { Plugin } from 'vite'
+import type { PluginOption } from 'vite'
 import type { EnvVirtualModulePluginOptions } from './types'
 
 /**
@@ -55,7 +55,7 @@ function genObjectWitchPathNotInTree(object: Record<string, any>, path: string[]
   return JSON.parse(JSON.stringify(object))
 }
 
-export function envTransformModule(options: EnvVirtualModulePluginOptions): Plugin {
+export function envTransformModule(options: EnvVirtualModulePluginOptions): PluginOption {
   const { resolveId, mode, combineData, envConstantPrefix } = options
 
   const envData = loadTargetEnvFile(mode, envConstantPrefix)

@@ -50,9 +50,9 @@ import { envTransformModule } from 'vite-plugin-env-transformer'
 
 const options = { mode, resolveId: 'demo:siteData', envConstantPrefix: 'SYSTEM' }
 
-export default defineConfig(({ mode }: ConfigEnv) => {
+export default ({ mode }: ConfigEnv) => {
   plugins: [envTransformModule(options)]
-});
+}
 ```
 
 现在,你的项目将在编译时，得到一个名为 `demo:siteData` 的模块，它其中包含了你在 `.env.dev` 文件中编写的配置。

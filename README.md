@@ -50,9 +50,9 @@ import { envTransformModule } from 'vite-plugin-env-transformer'
 
 const options = { mode, resolveId: 'demo:siteData', envConstantPrefix: 'SYSTEM' }
 
-export default defineConfig(({ mode }: ConfigEnv) => {
+export default ({ mode }: ConfigEnv) => {
   plugins: [envTransformModule(options)]
-});
+}
 ```
 
 Now when your project compiles, you get a module called `demo:siteData` that contains the configuration you wrote in the `.env.dev` file.
