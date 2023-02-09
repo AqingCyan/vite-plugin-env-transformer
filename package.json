@@ -6,7 +6,11 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "homepage": "",
+  "homepage": "https://github.com/AqingCyan/vite-plugin-env-transformer",
+  "repository": {
+    "url": "https://github.com/AqingCyan/vite-plugin-env-transformer",
+    "type": "git"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
