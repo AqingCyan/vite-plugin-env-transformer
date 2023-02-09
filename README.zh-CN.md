@@ -89,8 +89,8 @@ import siteData from 'demo:siteData'
 console.log(siteData)
 ```
 
-// TODO
-see [example](./examples/)
+
+查看示例 [example](./examples/)
 
 ## Options
 // TODO

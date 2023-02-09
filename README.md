@@ -89,7 +89,6 @@ import siteData from 'demo:siteData'
 console.log(siteData)
 ```
 
-// TODO
 see [example](./examples/)
 
 ## Options
