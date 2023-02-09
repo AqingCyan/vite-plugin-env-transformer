@@ -61,7 +61,7 @@ export function envTransformModule(options: EnvVirtualModulePluginOptions): Plug
   const envData = loadTargetEnvFile(mode, envConstantPrefix)
 
   return {
-    name: 'vite-plugin-env-transform-module',
+    name: 'vite-plugin-env-transformer',
     resolveId(id) {
       if (id === resolveId)
         return `\0${resolveId}`
