@@ -22,6 +22,11 @@
     "plugin",
     "virtual module"
   ],
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md"
+  ],
   "author": "AqingCyan",
   "license": "MIT",
   "lint-staged": {
